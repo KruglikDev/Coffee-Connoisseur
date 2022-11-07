@@ -8,6 +8,8 @@
 /.idea
 .yarn
 .idea
+.next
+/.next
 
 # testing
 /coverage
