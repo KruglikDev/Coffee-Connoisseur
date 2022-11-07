@@ -1,8 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Banner from "../components/Banner/banner";
 
 export default function Home() {
+  const handleOnClick = () => {
+    console.log("Clicked");
+  };
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,10 +17,8 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1>Coffee Connoisseur</h1>
+        <Banner buttonText="View stores nearby" handleOnClick={handleOnClick} />
       </main>
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 }
